@@ -4,7 +4,7 @@ import requests
 
 
 def recurse(subreddit, hot_list=[], after=None):
-    """"Doc"""
+    """"Doc"""  
     url = "https://www.reddit.com/r/{}/hot.json" \
         .format(subreddit)
     header = {'User-Agent': 'Mozilla/5.0'}
@@ -24,4 +24,3 @@ def recurse(subreddit, hot_list=[], after=None):
 
         return recurse(subreddit, hot_list, after=after) \
             if has_next else hot_list
-
