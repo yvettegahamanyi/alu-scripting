@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""DOCUMENTING"""
+"""Function to return number of subscribers"""
 import requests
 
 
