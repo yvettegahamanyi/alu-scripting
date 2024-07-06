@@ -9,7 +9,8 @@ def number_of_subscribers(subreddit):
 
     header = {'User-agent': 'Mozilla/5.0'}
     response = requests.get(reddit_url,
-                            headers=header
+                            headers=header,
+                            allow_redirects=False
                             )
 
     if response.status_code == 200:
